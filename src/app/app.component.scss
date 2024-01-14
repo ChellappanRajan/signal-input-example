@@ -1,0 +1,14 @@
+:host{
+    padding: 2.5rem;
+    display: block;
+}
+.user-section__header{
+    height: 60px;
+    h1{
+        font-size: 36px;
+    }
+}
+.primary-header{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+}
+
+.nav{
+    padding-left: 0;    
+}
+.user-section__nav-item{
+    
+    color: var(--nav-text-color);
+    
+}
+a{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var( --nav-border-radius);
+  
+        background-color: var(   --nav-bg-color);
+    display: inline-flex
+}
+
