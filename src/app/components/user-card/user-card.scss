@@ -1,32 +1,32 @@
-.user-section__card{
-    display: flex;
 
-}
 //https://ishadeed.com/article/grid-layout-flexbox-components/
 :host{
     display: block;
 }
-.user-section__card{
-    border: 2px solid var(--nav-bg-color);
-    padding: 1rem;
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 16px;
-  }
-
-
+}
 .card {
     display: flex;
     align-items: center;
     gap: 1rem;  
+    border: 2px solid var(--nav-bg-color);
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms;
   }
-  
-  .card__content {
+.card:hover{
+    transform: scale(1.1);
+}
+.card__content {
     flex-grow: 1; /* [3] */
     display: flex; /* [4] */
     flex-direction: column;
     gap: 0.5rem;
-  }
+}
+.card_chips{
+  display: flex;
+}

@@ -9,8 +9,8 @@ import { UserCard } from "../user-card/user-card";
     imports:[UserCard],
     template:`
     <section class="wrapper">
-    @for (user of users(); track user) {
-            <app-user-card class="col"></app-user-card>
+    @for (user of users(); track $index) {
+            <app-user-card [user]="user"></app-user-card>
     }
 </section>
     `,
@@ -18,7 +18,5 @@ import { UserCard } from "../user-card/user-card";
 
 export class Users<T>{
     users = input<any>();
-
-
 
 }
