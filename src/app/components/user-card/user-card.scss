@@ -2,7 +2,7 @@
     display: flex;
 
 }
-
+//https://ishadeed.com/article/grid-layout-flexbox-components/
 :host{
     display: block;
 }
@@ -11,6 +11,22 @@
     padding: 1rem;
 }
 
-.user-section__card :hover{
-    transform: scale(2);
-}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;  
+  }
+  
+  .card__content {
+    flex-grow: 1; /* [3] */
+    display: flex; /* [4] */
+    flex-direction: column;
+    gap: 0.5rem;
+  }

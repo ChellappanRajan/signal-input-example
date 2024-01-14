@@ -12,7 +12,7 @@ import { UserCard } from './components/user-card/user-card';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,UserHeader,JsonPipe,UserCard],
+  imports: [RouterOutlet,UserHeader,JsonPipe,Users],
   templateUrl: './app.component.html',
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   // encapsulation:ViewEncapsulation.None

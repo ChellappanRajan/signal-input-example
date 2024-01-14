@@ -19,11 +19,8 @@
     </md-outlined-text-field>
     <app-user-header />
   </div>
-  <main class="wrapper">
-    @for (user of users; track user) {
-            <app-user-card class="col"></app-user-card>
-    }
+  <main >
+    <app-users [users]="users"/>
   </main>
 </header>
 
-<!-- <app-users [users]="users"></app-users> -->
