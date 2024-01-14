@@ -12,3 +12,11 @@
     display: flex;
     justify-content: space-between;
 }
+.wrapper {
+    margin-top:1rem ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+
+  

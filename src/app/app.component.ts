@@ -4,15 +4,17 @@ import { Users } from './components/users/users';
 import { UserHeader } from './components/user-header/user-header';
 import '@material/web/textfield/outlined-text-field.js';
 import '@material/web/icon/icon.js';
+import { JsonPipe } from '@angular/common';
+import { UserCard } from './components/user-card/user-card';
 
 // https://www.uidesigndaily.com/posts/figma-users-list-card-day-1542
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,UserHeader],
+  imports: [RouterOutlet,UserHeader,JsonPipe,UserCard],
   templateUrl: './app.component.html',
-  schemas:[CUSTOM_ELEMENTS_SCHEMA ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   // encapsulation:ViewEncapsulation.None
   styleUrl: './app.component.scss'
 })

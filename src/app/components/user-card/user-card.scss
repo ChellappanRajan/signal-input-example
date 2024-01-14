@@ -1,0 +1,16 @@
+.user-section__card{
+    display: flex;
+
+}
+
+:host{
+    display: block;
+}
+.user-section__card{
+    border: 2px solid var(--nav-bg-color);
+    padding: 1rem;
+}
+
+.user-section__card :hover{
+    transform: scale(2);
+}
